@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Jouons avec AJAX</title>
+		<link rel="stylesheet" href="css/app.css" />
+		<script src="js/jquery-3.3.1.min.js" ></script>
+		<script type="application/x-template" id="template-message">
+			<div class='message' id=''>
+				<div class="tutu">
+					<span class='author'></span>
+					<span class='text'></span>
+				</div>
+			</div>
+		</script>
+	</head>
+	<body>
+		<div id="history"></div>
+		<form id="chatbox" action="messages" method="post">
+			<input class="message" type="text" placeholder="Votre message..." />
+			<input class="send" type="submit" value="Envoyer" />
+		</form>
+
+		<script src="js/app.js"></script>
+	</body>
+</html>
